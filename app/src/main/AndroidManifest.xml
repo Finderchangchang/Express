@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wai.express">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/main_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="me.iwf.photopicker.PhotoPickerActivity" />
+        <activity android:name="me.iwf.photopicker.PhotoPagerActivity" />
+        <activity
+            android:name=".ui.QISHIActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RegUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AddExpressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UserCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.WenZiListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AddWenziActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity android:name="cn.bmob.pay.v3.act.PayAct" />
+    </application>
+
+</manifest>

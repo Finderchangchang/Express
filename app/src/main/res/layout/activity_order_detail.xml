@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <net.tsz.afinal.view.TitleBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:center_tv="订单详情"
+        app:left_iv="@mipmap/back" />
+
+    <LinearLayout
+        style="@style/item_wai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/item_lab_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收件人姓名:" />
+
+        <TextView
+            android:id="@+id/express_name_tv"
+            style="@style/item_lab_right"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/item_wai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/item_lab_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收件人电话:" />
+
+        <TextView
+            android:id="@+id/express_tel_tv"
+            style="@style/item_lab_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/item_wai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/item_lab_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收件人地址:" />
+
+        <TextView
+            android:id="@+id/express_address_tv"
+            style="@style/item_lab_right"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/item_wai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/item_lab_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单价格:" />
+
+        <TextView
+            android:id="@+id/express_price_tv"
+            style="@style/item_lab_right"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/item_wai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/item_lab_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单状态:" />
+
+        <TextView
+            android:id="@+id/order_state_tv"
+            android:textColor="#000"
+            style="@style/item_lab_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/courier_tel_ll"
+        style="@style/item_wai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/item_lab_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="送货人电话:" />
+
+        <TextView
+            android:id="@+id/courier_tel_tv"
+            style="@style/item_lab_right"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/item_wai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/item_lab_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注:" />
+
+        <TextView
+            android:id="@+id/remark_tv"
+            style="@style/item_lab_right"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/user_tel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="用户电话" />
+
+        <Button
+            android:id="@+id/courier_tel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="送货员电话"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>
